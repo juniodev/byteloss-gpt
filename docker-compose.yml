@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  byteloss:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: byteloss
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    restart: always
+    networks:
+      - byteloss
+
+networks:
+  byteloss:
+    driver: bridge

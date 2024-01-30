@@ -1,0 +1,29 @@
+# Arquivos e diretórios para ignorar ao criar a imagem Docker para um projeto Node.js
+
+# Ignorar arquivos e diretórios específicos
+node_modules/
+npm-debug.log
+yarn-error.log
+
+sessions.db
+
+# Ignorar arquivos de desenvolvimento
+*.log
+*.bak
+*.swp
+.DS_Store
+.vscode/
+.idea/
+.eslintcache
+.eslintrc.json
+.env.local
+benchmark.sh
+LICENSE
+README.md
+
+# Ignorar arquivos de teste
+__tests__/
+test/
+tests/
+spec/
+specs/
